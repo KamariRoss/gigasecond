@@ -5,7 +5,8 @@
 
 export const gigasecond = (DateNow) => {
   // accept a date (moment)
-  // pass it through logic that adds the giga second to the date
+  // pass it through logic that adds the gigasecond to the date
   // return the date
-  return new Date((DateNow.getTime() / 1000 + 1000000000) * 1000);
+  const gigasecond = 1000000000;
+  return new Date(DateNow.getTime() + gigasecond.toExponential() * 1000);
 };
